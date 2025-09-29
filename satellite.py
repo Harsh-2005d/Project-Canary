@@ -9,19 +9,14 @@ def load_and_preprocess_geotiff(filepath: str) -> np.ndarray:
     with rasterio.open(filepath) as src:
         arr = src.read()
 
-    # Step 1: Fill missing values for the first day using its mean
-    first_day = arr[0, :, :]
-    mean_value = np.nanmean(first_day)
-    missing_pixels = np.isnan(first_day)
-    first_day[missing_pixels] = mean_value
 
-    # Step 2: Fill missing values for subsequent days using the previous day's data
-    for day in range(1, arr.shape[0]):
-        current_day_data = arr[day, :, :]
-        previous_day_data = arr[day - 1, :, :]
-        missing_pixels_mask = np.isnan(current_day_data)
-        current_day_data[missing_pixels_mask] = previous_day_data[missing_pixels_mask]
-    
+    # Step 2: Fill missing values for subsequent days using the mean() data
+    for day in range(0, arr.shape[0]):
+        first_day = arr[day, :, :]
+        mean_value = np.nanmean(first_day)
+        missing_pixels = np.isnan(first_day)
+        first_day[missing_pixels] = mean_value
+        
     return arr
 
 def z_score_scale(data: np.ndarray) -> Tuple[np.ndarray, float, float]:
