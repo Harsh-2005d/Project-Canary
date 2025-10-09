@@ -1,4 +1,4 @@
-# Fusion Model — Satellite-Meteorology Integration
+## CNN LSTM Attention Based Hybrid Model
 ---
 ## Problem Understanding
 Air pollution in rapidly urbanizing megacities such as Delhi poses a persistent and escalating threat to public health. Among the most critical gaseous pollutants are Nitrogen Dioxide (NO₂) and Ozone (O₃), both of which frequently exceed globally accepted air quality thresholds. These pollutants, particularly at ground level, contribute to respiratory illnesses, cardiovascular stress, and long-term climate implications.
