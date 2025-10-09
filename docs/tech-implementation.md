@@ -234,8 +234,8 @@ class FusionModel(nn.Module):
 ```
 ---
 ## Results
-![bias v horizon](./model2.0/bias.png)
-![rmse](rmse.png)
+![bias v horizon](../model2.0/bias.png)
+![rmse](../model2.0/rmse.png)
 
 
 
