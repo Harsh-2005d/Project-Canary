@@ -1,4 +1,3 @@
-
 # Fusion Model — Satellite-Meteorology Integration
 ---
 ## Problem Understanding
@@ -71,7 +70,7 @@ def impute_missing_pixels(arr: np.ndarray) -> np.ndarray:
 ```
 ---
 
-## 3️⃣ Model Architecture
+## Model Architecture
 
 The proposed architecture is a hybrid deep learning model that fuses satellite imagery and station-level meteorological data to forecast short-term concentrations of NO₂ and O₃.
 It combines spatial encoders, temporal sequence modeling, and an attention mechanism to capture both spatial and temporal dependencies effectively.
