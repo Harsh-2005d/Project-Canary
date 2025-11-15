@@ -111,6 +111,8 @@ Station Features (T, 18)
 ---
 
 ## 📈 Model Performance
+![alt text](./docs/bias.png)
+![alt text](./docs/rmse.png)
 
 ### **NO₂**
 
