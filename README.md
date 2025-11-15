@@ -136,10 +136,5 @@ Station Features (T, 18)
 ---
 
 ## 📚 References
-[1] Jiang Yuan, * Attention-based CNN-LSTM hybrid models for ozone forecasting*, 2025.  
-Link: (https://www.nature.com/articles/s41598-025-05877-2)
+Attention mechanism based CNN-LSTM hybrid deep learning model for atmospheric ozone concentration prediction](https://www.nature.com/articles/s41598-025-05877-2))
 
-
----
-
-If you want, I can produce a **super short README**, a **research-style README**, or a **competition-ready 1-page version**.
